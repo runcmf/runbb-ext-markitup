@@ -23,8 +23,8 @@ use RunBB\Core\Utils;
 class markItUp extends Plugin
 {
     const NAME = 'markitup';// config key name
-    const TITLE = 'markItup Toolbar';
-    const DESCRIPTION = 'Add a markdown editor based on <a href="http://markitup.jaysalvat.com/home/">markitup</a>'.
+    const TITLE = 'markItUp Toolbar';
+    const DESCRIPTION = 'Markdown editor based on <a href="http://markitup.jaysalvat.com/home/">markItUp!</a>'.
     ' with <a href="https://github.com/Studio-42/elFinder">elFinder</a> file manager.';
     const VERSION = '0.1.0';
     const KEYWORDS = [
