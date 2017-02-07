@@ -62,8 +62,6 @@ class markItUp extends Plugin
     {
         Statical::addNamespace('*', __NAMESPACE__.'\\*');
 
-        // Add language files into javascript footer block
-        $this->c['hooks']->bind('view.alter_data', [$this, 'addJs']);
         // Support default actions
         $this->c['hooks']->bind('controller.post.create', [$this, 'addToolbar']);
         $this->c['hooks']->bind('controller.post.edit', [$this, 'addToolbar']);
@@ -158,6 +156,9 @@ replaceWith: \'![](\'+file.tmb+\' "[![Описание1:]!]")(\'+file.url+\' "[!
     public function addToolbar()
     {
         //$args = func_get_args();
+
+        // Add language files into javascript footer block
+        $this->c['hooks']->bind('view.alter_data', [$this, 'addJs']);
 
         // load css
         View::addAsset(
