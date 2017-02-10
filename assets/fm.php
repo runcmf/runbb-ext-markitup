@@ -153,7 +153,7 @@ $opts = array(
         array(
             'driver'        => 'LocalFileSystem',           // driver for accessing file system (REQUIRED)
             'path'          => dirname(__FILE__).'/data/',  // path to files (REQUIRED)
-            'URL'           => '/plugins/markitup/data/', // URL to files (REQUIRED)
+            'URL'           => '/ext/markitup/data/', // URL to files (REQUIRED)
             'uploadDeny'    => array('all'),                // All Mimetypes not allowed to upload
             'uploadAllow'   => array('image', 'text/plain'),// Mimetype `image` and `text/plain` allowed to upload
             'uploadOrder'   => array('deny', 'allow'),      // allowed Mimetype `image` and `text/plain` only

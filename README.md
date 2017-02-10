@@ -3,27 +3,21 @@
 
 ## Install
 1.
-```php
-$ composer require runcmf/runbb-ext-markitup:dev-master
-```
+go to Administration -> Plugins -> repo -> find `markItup based markdown editor toolbar with elFinder` -> click `install`    
 
-2.  
-add to setting.php into RunBB `plugins` section `'markitup' => 'RunMarkItup\markItUp'`  
-  like:
-```php
-    'plugins' => [// register plugins as NameSpace\InitInfoClass
-            'markitup' => 'RunMarkItup\markItUp'
-        ],
-```
-3.  
-go to Administration -> Plugins -> SimpleMDE Toolbar -> Activate  
+in modal window click green button with `require runcmf/runbb-ext-markitup`  
 
-4.  add elfinder container to skins
+2.   
+after close modal, page refreshed and you see `markItup based markdown editor toolbar with elFinder` **installed**  
+
+go to Administration -> Plugins -> `markItUp Toolbar` -> `Activate`
+
+3.  add elfinder container to skins near `<textarea`
 ```html
 <div id="markitup-elfinder"></div>
 ```
 
-
+---
 ## Recommendations
 
 * TODO
